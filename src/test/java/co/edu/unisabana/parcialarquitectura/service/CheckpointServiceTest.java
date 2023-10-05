@@ -28,11 +28,9 @@ class CheckpointServiceTest {
     CheckpointService checkpointService;
     @Test
     void checkout() {
-        CheckpointDTO checkinDTO;
-
-        Checkin lastCheckin = new Checkin("Facility Test", "Driver Test", 10);
-        assertEquals("Facility Test",lastCheckin.getFacility());
-        assertEquals("Driver Test",lastCheckin.getFacility());
-        assertEquals("Facility Test",lastCheckin.getFacility());
+        CheckpointDTO checkinDTO = new CheckpointDTO("Facility Test", "Driver Test", 10);
+        checkpointService.checkout(checkinDTO);
+        Checkin lastCheckin = new Checkin(checkinDTO.facility, checkinDTO.driver, checkinDTO.dayOfMonth);
+        Mockito.verify(checkpointRepository).save(checkinDTO);
     }
 }
