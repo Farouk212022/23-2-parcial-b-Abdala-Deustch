@@ -1,8 +1,8 @@
 package co.edu.unisabana.parcialarquitectura.service;
 
 import co.edu.unisabana.parcialarquitectura.controller.dto.CheckpointDTO;
-import co.edu.unisabana.parcialarquitectura.service.model.Checkin;
-import co.edu.unisabana.parcialarquitectura.service.model.Checkout;
+import co.edu.unisabana.parcialarquitectura.repository.model.Checkin;
+import co.edu.unisabana.parcialarquitectura.repository.model.Checkout;
 import co.edu.unisabana.parcialarquitectura.repository.CheckpointPort;
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Service;

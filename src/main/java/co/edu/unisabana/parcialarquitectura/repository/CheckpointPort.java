@@ -1,7 +1,7 @@
 package co.edu.unisabana.parcialarquitectura.repository;
 
-import co.edu.unisabana.parcialarquitectura.service.model.Checkin;
-import co.edu.unisabana.parcialarquitectura.service.model.Checkout;
+import co.edu.unisabana.parcialarquitectura.repository.model.Checkin;
+import co.edu.unisabana.parcialarquitectura.repository.model.Checkout;
 
 public interface CheckpointPort {
 
